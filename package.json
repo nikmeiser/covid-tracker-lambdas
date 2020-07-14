@@ -16,7 +16,7 @@
   "dependencies": {
     "@nearform/sql": "^1.4.0",
     "archiver": "^4.0.1",
-    "aws-sdk": "^2.646.0",
+    "aws-sdk": "^2.702.0",
     "flat": "^5.0.0",
     "jsonwebtoken": "^8.5.1",
     "node-fetch": "^2.6.0",
