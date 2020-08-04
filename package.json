@@ -23,7 +23,7 @@
     "openpgp": "^4.10.2",
     "pg": "^7.18.2",
     "pg-range": "^1.1.0",
-    "protobufjs": "^6.9.0",
+    "protobufjs": "^6.10.0",
     "ssh2-sftp-client": "^5.1.2"
   },
   "devDependencies": {
