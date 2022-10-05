@@ -11,20 +11,23 @@
     "settings": "env-cmd -f .env node settings.js",
     "stats": "env-cmd -f .env node stats.js",
     "token:push": "env-cmd -f .env node token.js \"{ \\\"type\\\": \\\"push\\\" }\"",
-    "token:register": "env-cmd -f .env node token.js \"{ \\\"type\\\": \\\"register\\\" }\""
+    "token:register": "env-cmd -f .env node token.js \"{ \\\"type\\\": \\\"register\\\" }\"",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@nearform/sql": "^1.4.0",
     "archiver": "^4.0.1",
-    "aws-sdk": "^2.646.0",
-    "flat": "^5.0.0",
+    "aws-sdk": "^2.814.0",
+    "flat": "^5.0.2",
     "jsonwebtoken": "^8.5.1",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "openpgp": "^4.10.2",
     "pg": "^7.18.2",
     "pg-range": "^1.1.0",
-    "protobufjs": "^6.9.0",
-    "ssh2-sftp-client": "^5.1.2"
+    "protobufjs": "^6.11.3",
+    "ssh2-sftp-client": "^7.0.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0"
@@ -36,5 +39,6 @@
       "git add"
     ]
   },
-  "prettier": "prettier-config-standard"
+  "prettier": "prettier-config-standard",
+  "snyk": true
 }
